@@ -1,0 +1,178 @@
+/* .c{
+    margin-top: 100px;
+  }
+  .b{
+    margin-top: 100px;
+  } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  max-width: 800px;
+  height: 500px;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.myRightCtnSignin header {
+  color: rgb(10, 10, 10);
+  font-size: 44px;
+  /* margin-top: -80px; */
+}
+.myRightCtnSignin{
+  
+  position: relative;
+  background-image: url("https://zaayega.com/blog/wp-content/uploads/2015/03/Benefits-of-selling-products-online-in-India.jpg");
+  background-size: 400px 500px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  color: rgb(192, 192, 192);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: sigin;
+  animation-direction: alternate-reverse;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+@keyframes sigin {
+  0% {
+    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/69/79/image-about-buying-and-selling-online-vector-22286979.jpg");
+  }
+
+  50%{
+    background-image: url("https://www.finplus.co.in/wp-content/uploads/2017/05/Sell-products-online-why-should-I-start-selling-online.jpg");
+  }
+
+  75%{
+    background-image: url("https://zaayega.com/blog/wp-content/uploads/2015/03/Benefits-of-selling-products-online-in-India.jpg")
+  }
+
+  100% {
+    background-image: url("https://image.freepik.com/free-vector/online-sale_23-2147510721.jpg");
+  }
+}
+.myRightCtn {
+  position: relative;
+  background-image: url("https://zaayega.com/blog/wp-content/uploads/2015/03/Benefits-of-selling-products-online-in-India.jpg");
+  background-size: 400px 500px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  color: rgb(192, 192, 192);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myLeftCtn {
+  position: relative;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px;
+  padding-left: 50px;
+  background-color: seashell;
+}
+.myLeftCtn header {
+  color: rgba(24, 23, 22, 0.63);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 100%;
+}
+.myCard {
+  position: relative;
+  background: seashell;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.myRightCtn header {
+  color: rgb(10, 10, 10);
+  font-size: 44px;
+  /* margin-top: -80px; */
+}
+
+.box {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.myLeftCtn .myInput {
+  width: 230px;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 50px;
+  border: none;
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCtn .myInput:focus {
+  outline: none;
+}
+
+.myForm {
+  position: relative;
+  margin-top: 50px;
+}
+.myLeftCtn .btn {
+  background: linear-gradient(45deg, rgb(135, 240, 214), rgb(29, 126, 182));
+  width: 230px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCtn .btn:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(34, 73, 180, 0.822),
+    rgba(29, 126, 182, 0.5)
+  );
+}
+.myLeftCtn .fa {
+  position: relative;
+  left: 36px;
+  color:  rgb(29, 126, 182)
+}
+
+ .add{
+  width: 600px;
+}
+
+.ad{
+  margin-left: 20px;
+} 
+.addbtn{
+  margin-left: 90px;
+}
+
+p{
+  color: black;
+}

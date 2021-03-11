@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "9eb6474d-a21c-41c9-898f-d5eb8b6624d3",
+		"name": "Selling ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "allItem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"blabla\", \r\n    \"name\": \"Fatimah\", \r\n    \"cotactInfo\": \"jcnkljا@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/allItem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"allItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OneItem",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"blabla\", \r\n    \"name\": \"Fatimah\", \r\n    \"cotactInfo\": \"jcnkljا@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/OneItem?id=6016af36a3cdc71d50fdae95",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"OneItem"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6016af36a3cdc71d50fdae95"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oneItemByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/oneItemByName?itemTitle=used",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"oneItemByName"
+					],
+					"query": [
+						{
+							"key": "itemTitle",
+							"value": "used"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SellerItem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/SellerItem?Id=60191adff197bb67e45be647",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"SellerItem"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "60191adff197bb67e45be647"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allSeller",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"blabla\", \r\n    \"name\": \"Fatimah Alhelal\", \r\n    \"cotactInfo\": \"ana.fatim16@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/allSeller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"allSeller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oneSeller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/oneSeller?userName=Footy16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"oneSeller"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Footy16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "oneSellerId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/oneSellerId?id=60168567f4a837551823b193",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"oneSellerId"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "60168567f4a837551823b193"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n {\r\n    \"itemTitle\": \"Core 2 Duo Used Computers\", \r\n    \"image\": \"https://5.imimg.com/data5/AO/FI/NP/ANDROID-10424588/product-jpeg-500x500.jpg\", \r\n    \"description\": \"Hard Drive Capacity:160GB, Size: 17\", \r\n    \"price\": 2000, \r\n    \"state\": \"used\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/AddItem?userName=Hind",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"AddItem"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "Hind"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"userName\": \"Hind\", \r\n    \"name\": \"Hind\", \r\n    \"cotactInfo\": \"Hind@gmail.com\", \r\n    \"password\": \"123456\"\r\n}\r\n,\r\n{\r\n    \"userName\": \"Fatimah\", \r\n    \"name\": \"Fatimah ALhelal\", \r\n    \"cotactInfo\": \"ana.fatim16@gmail.com\", \r\n     \"password\": \"123456\"\r\n}, \r\n{\r\n    \"userName\": \"Ghaidaa\", \r\n    \"name\": \"Ghaidaa\", \r\n    \"cotactInfo\": \"Ghaidaa@gmail.com\", \r\n     \"password\": \"123456\"\r\n}, \r\n{\r\n    \"userName\": \"Aseel\", \r\n    \"name\": \"Aseel\", \r\n    \"cotactInfo\": \"ana.fatim16@gmail.com\",   \r\n    \"password\": \"123456\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllItem",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/deleteAllItem?userId=6017fde6266fdd3ff8af1b8b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"deleteAllItem"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "6017fde6266fdd3ff8af1b8b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "itemDelet",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/itemDelete?=&id=601682c62d8c59567c028da9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"itemDelete"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						},
+						{
+							"key": "id",
+							"value": "601682c62d8c59567c028da9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateItem",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemTitle\": \"Item updata\", \r\n    \"image\": \"https://cdn.iconscout.com/icon/free/png-512/update-autorenew-refresh-reload-31805.png\", \r\n    \"description\": \"Just updata the item information\", \r\n    \"price\": 30, \r\n    \"state\": \"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/updateItem?id=6016b91a0e25c351acfd2507",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"updateItem"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6016b91a0e25c351acfd2507"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

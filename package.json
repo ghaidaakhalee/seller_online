@@ -1,0 +1,21 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon backend_starter_code/server",
+    "start": "node backend_starter_code/server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.13",
+    "mongoose-type-url": "^2.1.0",
+    "mongose": "^0.0.2-security",
+    "path": "^0.12.7"
+  }
+}
